@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru" data-theme="dark" data-root="../..">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Case 002 — Mirror Deal" />
+  <title>Case 002 — Mirror Deal</title>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body data-case-id="002">
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg__blob bg__blob--1"></div>
+    <div class="bg__blob bg__blob--2"></div>
+    <div class="bg__blob bg__blob--3"></div>
+    <div class="bg__mesh"></div>
+    <div class="bg__pattern"></div>
+    <div class="bg__vignette"></div>
+  </div>
+
+  <header class="topbar" id="topbar">
+    <div class="progress" aria-hidden="true"><div class="progress__bar" id="scrollProgress"></div></div>
+
+    <div class="wrap topbar__inner">
+      <a class="brand" href="../../index.html" aria-label="Ballas — на главную">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">
+          <span class="brand__title">Ballas</span>
+          <span class="brand__sub">Case 002</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация">
+        <a class="nav__link" href="../../cases/index.html">Все кейсы</a>
+        <a class="nav__link" href="../../characters/index.html">Персонажи</a>
+        <a class="nav__link" href="../../rp/index.html">RP‑досье</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn btn--ghost" id="themeBtn" type="button">🌙 Dark</button>
+        <button class="btn btn--ghost" id="searchBtn" type="button">Поиск</button>
+
+        <button class="iconBtn" id="menuBtn" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="iconBtn__bar"></span>
+          <span class="iconBtn__bar"></span>
+          <span class="iconBtn__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobileMenu" id="mobileMenu" hidden>
+      <div class="wrap mobileMenu__inner">
+        <a class="mobileMenu__link" href="../../cases/index.html">Все кейсы</a>
+        <a class="mobileMenu__link" href="../../characters/index.html">Персонажи</a>
+        <a class="mobileMenu__link" href="../../rp/index.html">RP‑досье</a>
+        <div class="mobileMenu__hint">Меню закрывается по клику на пункт или по Esc.</div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero__grid">
+        <div>
+          <div class="chips reveal">
+            <span class="chip">Case 002</span>
+            <span class="chip">Mirror Deal</span>
+            <span class="chip">Strawberry</span>
+          </div>
+          <h1 class="h1 reveal">Mirror Deal</h1>
+          <p class="lead reveal">Сцена про доверие, утечку и холодную вежливость.</p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="../../cases/index.html">← К списку кейсов</a>
+        <a class="btn btn--ghost" href="../../index.html">На главную</a>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <div class="panel__head">
+            <div>
+              <div class="panel__title">Навигация</div>
+              <div class="panel__sub">связанные страницы</div>
+            </div>
+            <span class="badge">links</span>
+          </div>
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn btn--ghost" href="../../characters/index.html">Персонажи</a>
+            <a class="btn btn--ghost" href="../../index.html#hooks">Крючки</a>
+            <a class="btn btn--primary" href="../../rp/index.html#finance">Финансы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" style="padding-top:0">
+      <div id="caseView"></div>
+
+      <div class="panel reveal" style="margin-top:14px">
+        <div class="panel__head"><div><div class="panel__title">RP‑подсказка</div><div class="panel__sub">как играть «зеркало»</div></div><span class="badge">tip</span></div>
+        <p class="p">Сильнее всего работают не угрозы, а паузы. Пусть игроки слышат подтекст: кто не договорил, кто свернул разговор первым.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div>Ballas • Case 002</div>
+        <button class="btn btn--ghost" id="themeBtn2" type="button">Тема</button>
+      </div>
+    </footer>
+  </main>
+
+  <button class="btn btn--primary toTop" id="toTop" type="button" aria-label="Наверх">↑ Наверх</button>
+
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-close="1" tabindex="-1"></div>
+    <div class="modal__panel" role="document">
+      <div class="modal__head">
+        <div>
+          <div class="modal__title" id="modalTitle">—</div>
+        </div>
+        <button class="btn btn--ghost" data-close="1" type="button">Закрыть</button>
+      </div>
+      <div class="modal__body" id="modalBody"></div>
+      <div class="modal__foot">
+        <span class="chip">Case</span>
+        <span class="chip">RP</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
